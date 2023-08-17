@@ -1,0 +1,44 @@
+import { Guides } from '@/components/Guides'
+import { Resources } from '@/components/Resources'
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'API Documentation',
+  description: 'Documentasi untuk Carisurau API',
+}
+
+export const sections = [
+  { title: 'Panduan', id: 'guides' },
+  { title: 'API', id: 'resources' },
+]
+
+<HeroPattern />
+
+# API Documentation
+
+Gunakan CariSurau API untuk mendapatkan data Surau / Masjid di seluruh Malaysia. {{ className: 'lead' }}
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button
+    href="https://developer.carisurau.com"
+    arrow="right"
+    children="Cipta akaun developer"
+  />
+</div>
+
+## Sebelum bermula {{ anchor: false }}
+
+Pastikan anda mempunyai akaun [Carisurau Developer](https://developer.carisurau.com). {{ className: 'lead' }}
+
+<div className="not-prose">
+  <Button
+    href="https://developer.carisurau.com"
+    variant="text"
+    arrow="right"
+    children="Cipta akaun"
+  />
+</div>
+
+<Guides />
+
+<Resources />

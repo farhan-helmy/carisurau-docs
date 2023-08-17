@@ -1,0 +1,19 @@
+export const metadata = {
+  title: 'Authentication',
+  description: 'Disini kita akan lihat cara untuk Authenticate.',
+}
+
+# Authentication
+
+Anda perlu authenticate sambil menghantar request ke Carisurau API. {{ className: 'lead' }}
+
+# Basic authentication
+
+```bash {{ title: 'Contoh asas menghantar API request dengan APP_KEY dan APP_SECRET' }}
+curl --request GET \
+  --url https://api.carisurau.com/surau \
+  -H 'APP_KEY: {APP_KEY}' \
+  -H 'APP_SECRET: {APP_SECRET}'
+```
+
+Jangan commit APP_KEY dan APP_SECRET di Github!
